@@ -4,6 +4,11 @@ const server = http.createServer( (req, res) => {
         res.write('Hello World')
         res.end()
     }
+
+    if (req.url === '/about') {
+        res.write('about')
+        res.end()
+    }
 });
 
 // server.on('connection', (socket) => {
